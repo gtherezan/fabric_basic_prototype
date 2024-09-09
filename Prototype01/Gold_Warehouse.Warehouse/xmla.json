@@ -3815,7 +3815,7 @@
     ],
     "relationships": [
       {
-        "name": "4ff0e396-f368-4203-a5fb-716d8e29f76a",
+        "name": "2e0ab7ad-e629-42da-a881-43cc1a8aeb9f",
         "fromTable": "Vendas",
         "fromColumn": "Anexos",
         "toTable": "ContasReceber",
