@@ -1,0 +1,471 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.131.1203.0 (24.07)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Calendar\",\"ContasReceber\",\"ContasReceberHist\",\"Medidas\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "Calendar",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "DateValue",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "2ff19fb9-6154-4fe6-adf4-2a8f2ecb159f",
+            "sourceColumn": "DateValue",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "721146b0-a010-40fa-843c-adb9e7208b55",
+            "sourceColumn": "Year",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "StartOfYear",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "34022b00-4f69-448d-844f-83c63b35a452",
+            "sourceColumn": "StartOfYear",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EndOfYear",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6a5bb2d9-0d9a-45e0-abc8-4be88f4af70e",
+            "sourceColumn": "EndOfYear",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "55d3379d-ba23-4531-a7cf-79bd35afd39b",
+            "sourceColumn": "Month",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "StartOfMonth",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1ccdb090-5acc-4647-b36f-a2f8f1c2fe5a",
+            "sourceColumn": "StartOfMonth",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EndOfMonth",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ddc5e533-92b7-437d-b5c4-d631ce142c74",
+            "sourceColumn": "EndOfMonth",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DaysInMonth",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "fd2e3195-4d82-4a83-b38e-2535dd59bbcd",
+            "sourceColumn": "DaysInMonth",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a20a6846-f6aa-4be8-9e79-7e6377f43ccb",
+            "sourceColumn": "Day",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "fc88c404-a48c-444d-a4cf-94f2e4eece22",
+        "partitions": [
+          {
+            "name": "Calendar",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"p4jc7og4nzjeznwinrq5zvl6ui-wwzyrfn6343elmfrhfncaofz2i.datawarehouse.fabric.microsoft.com\", \"Gold_Warehouse\"),",
+                "    dbo_Calendar = Source{[Schema=\"dbo\",Item=\"Calendar\"]}[Data],",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(dbo_Calendar,{\"DateValue\", \"Year\", \"StartOfYear\", \"EndOfYear\", \"Month\", \"StartOfMonth\", \"EndOfMonth\", \"DaysInMonth\", \"Day\"})",
+                "in",
+                "    #\"Removed Other Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContasReceber",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "NumParcelas",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7f9833c8-a861-4773-a845-b01d7b8e8b2c",
+            "sourceColumn": "NumParcelas",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Tipo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7ee436d5-6dd5-4106-ad16-4dae0cfa67e0",
+            "sourceColumn": "Tipo",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NumParcelasGeral",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "dc5564f4-b0c3-4d51-893f-bc4e1134a5da",
+            "sourceColumn": "NumParcelasGeral",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Empresa",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c5207375-a785-4a08-b145-e71390200ddc",
+            "sourceColumn": "Empresa",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Obra",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "06e636a4-c564-4973-8740-0ff42360d141",
+            "sourceColumn": "Obra",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NumVendedor",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e6220370-9c1c-4984-a2f4-5324b18ba82e",
+            "sourceColumn": "NumVendedor",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "84752907-6520-4253-9f22-a740dc5b1642",
+        "partitions": [
+          {
+            "name": "ContasReceber",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"p4jc7og4nzjeznwinrq5zvl6ui-wwzyrfn6343elmfrhfncaofz2i.datawarehouse.fabric.microsoft.com\", \"Gold_Warehouse\"),",
+                "    dbo_ContasReceber = Source{[Schema=\"dbo\",Item=\"ContasReceber\"]}[Data],",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(dbo_ContasReceber,{\"NumParcelas\", \"Tipo\", \"NumParcelasGeral\", \"Empresa\", \"Obra\", \"NumVendedor\"})",
+                "in",
+                "    #\"Removed Other Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "ContasReceberHist",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "NumHistorico",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4b9697c1-3448-487a-84e3-459f4be43e05",
+            "sourceColumn": "NumHistorico",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NumParcelas",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f90487b6-005f-44c8-b378-1e48b8a962f8",
+            "sourceColumn": "NumParcelas",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Tipo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d67f280f-9bb3-4bee-8ebd-46d4a3c39fa9",
+            "sourceColumn": "Tipo",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NumParcelasGeral",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "91f40f0d-c421-478d-9d45-a13d7b495718",
+            "sourceColumn": "NumParcelasGeral",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Empresa",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0f78929b-c5f1-4163-b306-9ee4406d921d",
+            "sourceColumn": "Empresa",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "10d81d22-1d75-4721-bca0-545c5c457925",
+        "partitions": [
+          {
+            "name": "ContasReceberHist",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"p4jc7og4nzjeznwinrq5zvl6ui-wwzyrfn6343elmfrhfncaofz2i.datawarehouse.fabric.microsoft.com\", \"Gold_Warehouse\"),",
+                "    dbo_ContasReceberHist = Source{[Schema=\"dbo\",Item=\"ContasReceberHist\"]}[Data],",
+                "    #\"Removed Other Columns\" = Table.SelectColumns(dbo_ContasReceberHist,{\"NumHistorico\", \"NumParcelas\", \"Tipo\", \"NumParcelasGeral\", \"Empresa\"})",
+                "in",
+                "    #\"Removed Other Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Medidas",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Column1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "97b23489-b000-4d09-8be6-23065477fdb5",
+            "sourceColumn": "Column1",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "8b0c9db2-043f-4cf8-b672-aeed6925eebb",
+        "measures": [
+          {
+            "name": "Medida Exemplo",
+            "expression": "MAX(ContasReceber[NumParcelas])",
+            "formatString": "0",
+            "lineageTag": "e62ebc62-40a3-4cc7-849a-f770b90e68ce"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Medidas",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Column1\", type text}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

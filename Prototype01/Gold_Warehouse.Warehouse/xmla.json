@@ -1,0 +1,3849 @@
+{
+  "name": "{{Dataset_Name}}",
+  "compatibilityLevel": 1604,
+  "model": {
+    "name": "{{Dataset_Name}}",
+    "culture": "en-US",
+    "collation": "Latin1_General_100_BIN2_UTF8",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "Calendar",
+        "sourceLineageTag": "[dbo].[Calendar]",
+        "columns": [
+          {
+            "name": "DateValue",
+            "dataType": "dateTime",
+            "sourceColumn": "DateValue",
+            "formatString": "General Date",
+            "sourceProviderType": "date",
+            "sourceLineageTag": "DateValue",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Year",
+            "dataType": "int64",
+            "sourceColumn": "Year",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Year",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "StartOfYear",
+            "dataType": "string",
+            "sourceColumn": "StartOfYear",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "StartOfYear",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "EndOfYear",
+            "dataType": "string",
+            "sourceColumn": "EndOfYear",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "EndOfYear",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Month",
+            "dataType": "int64",
+            "sourceColumn": "Month",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Month",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "StartOfMonth",
+            "dataType": "string",
+            "sourceColumn": "StartOfMonth",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "StartOfMonth",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "EndOfMonth",
+            "dataType": "string",
+            "sourceColumn": "EndOfMonth",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "EndOfMonth",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DaysInMonth",
+            "dataType": "int64",
+            "sourceColumn": "DaysInMonth",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "DaysInMonth",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Day",
+            "dataType": "int64",
+            "sourceColumn": "Day",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Day",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DayName",
+            "dataType": "string",
+            "sourceColumn": "DayName",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DayName",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DayOfWeek",
+            "dataType": "int64",
+            "sourceColumn": "DayOfWeek",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "DayOfWeek",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "MonthName",
+            "dataType": "string",
+            "sourceColumn": "MonthName",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "MonthName",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Quarter",
+            "dataType": "int64",
+            "sourceColumn": "Quarter",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Quarter",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "StartOfQuarter",
+            "dataType": "string",
+            "sourceColumn": "StartOfQuarter",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "StartOfQuarter",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "EndOfQuarter",
+            "dataType": "string",
+            "sourceColumn": "EndOfQuarter",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "EndOfQuarter",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Dataset_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Calendar",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "True"
+          }
+        ]
+      },
+      {
+        "name": "ContasReceber",
+        "sourceLineageTag": "[dbo].[ContasReceber]",
+        "columns": [
+          {
+            "name": "NumParcelas",
+            "dataType": "int64",
+            "sourceColumn": "NumParcelas",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "NumParcelas",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Tipo",
+            "dataType": "string",
+            "sourceColumn": "Tipo",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Tipo",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "NumParcelasGeral",
+            "dataType": "int64",
+            "sourceColumn": "NumParcelasGeral",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "NumParcelasGeral",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Empresa",
+            "dataType": "int64",
+            "sourceColumn": "Empresa",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Empresa",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Obra",
+            "dataType": "string",
+            "sourceColumn": "Obra",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Obra",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "NumVendedor",
+            "dataType": "int64",
+            "sourceColumn": "NumVendedor",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "NumVendedor",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Data",
+            "dataType": "string",
+            "sourceColumn": "Data",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Data",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Valor",
+            "dataType": "double",
+            "sourceColumn": "Valor",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "Valor",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Status",
+            "dataType": "int64",
+            "sourceColumn": "Status",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Status",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "EmBanco",
+            "dataType": "int64",
+            "sourceColumn": "EmBanco",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "EmBanco",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Origem",
+            "dataType": "int64",
+            "sourceColumn": "Origem",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Origem",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Cliente",
+            "dataType": "int64",
+            "sourceColumn": "Cliente",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Cliente",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataProrrogacao",
+            "dataType": "string",
+            "sourceColumn": "DataProrrogacao",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataProrrogacao",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "JurosParcelas",
+            "dataType": "double",
+            "sourceColumn": "JurosParcelas",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "JurosParcelas",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "ComoParcelas",
+            "dataType": "string",
+            "sourceColumn": "ComoParcelas",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "ComoParcelas",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "IndiceReajuste",
+            "dataType": "string",
+            "sourceColumn": "IndiceReajuste",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "IndiceReajuste",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "AmortizacaoParcelas",
+            "dataType": "int64",
+            "sourceColumn": "AmortizacaoParcelas",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "AmortizacaoParcelas",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "InicioFimParcelas",
+            "dataType": "int64",
+            "sourceColumn": "InicioFimParcelas",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "InicioFimParcelas",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataIndiceParcelas",
+            "dataType": "string",
+            "sourceColumn": "DataIndiceParcelas",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataIndiceParcelas",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataJurosParcelas",
+            "dataType": "string",
+            "sourceColumn": "DataJurosParcelas",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataJurosParcelas",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Capital",
+            "dataType": "string",
+            "sourceColumn": "Capital",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Capital",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TotalParcelas",
+            "dataType": "int64",
+            "sourceColumn": "TotalParcelas",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "TotalParcelas",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataParcelas",
+            "dataType": "string",
+            "sourceColumn": "DataParcelas",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataParcelas",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ValorResiduo",
+            "dataType": "double",
+            "sourceColumn": "ValorResiduo",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorResiduo",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "GrupoIndice",
+            "dataType": "int64",
+            "sourceColumn": "GrupoIndice",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "GrupoIndice",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "GrupoParcelas",
+            "dataType": "int64",
+            "sourceColumn": "GrupoParcelas",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "GrupoParcelas",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "StatusCobranca",
+            "dataType": "string",
+            "sourceColumn": "StatusCobranca",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "StatusCobranca",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalCorrecaoAtraso",
+            "dataType": "string",
+            "sourceColumn": "CapitalCorrecaoAtraso",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalCorrecaoAtraso",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalJuros",
+            "dataType": "string",
+            "sourceColumn": "CapitalJuros",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalJuros",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalCorrecao",
+            "dataType": "string",
+            "sourceColumn": "CapitalCorrecao",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalCorrecao",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalMulta",
+            "dataType": "string",
+            "sourceColumn": "CapitalMulta",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalMulta",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalJurosAtraso",
+            "dataType": "string",
+            "sourceColumn": "CapitalJurosAtraso",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalJurosAtraso",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalAcrescimo",
+            "dataType": "string",
+            "sourceColumn": "CapitalAcrescimo",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalAcrescimo",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalDesconto",
+            "dataType": "string",
+            "sourceColumn": "CapitalDesconto",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalDesconto",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Anexos",
+            "dataType": "int64",
+            "sourceColumn": "Anexos",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Anexos",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalDescontoAntecipado",
+            "dataType": "string",
+            "sourceColumn": "CapitalDescontoAntecipado",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalDescontoAntecipado",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalTaxaBoleto",
+            "dataType": "string",
+            "sourceColumn": "CapitalTaxaBoleto",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalTaxaBoleto",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ValorTaxaBoleto",
+            "dataType": "double",
+            "sourceColumn": "ValorTaxaBoleto",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorTaxaBoleto",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "NumContrato",
+            "dataType": "int64",
+            "sourceColumn": "NumContrato",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "NumContrato",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "OrigemCusto",
+            "dataType": "int64",
+            "sourceColumn": "OrigemCusto",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "OrigemCusto",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CobrarMulta",
+            "dataType": "int64",
+            "sourceColumn": "CobrarMulta",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CobrarMulta",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CobrarJurosAtraso",
+            "dataType": "int64",
+            "sourceColumn": "CobrarJurosAtraso",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CobrarJurosAtraso",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CobrarTaxaAdm",
+            "dataType": "int64",
+            "sourceColumn": "CobrarTaxaAdm",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CobrarTaxaAdm",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CobrarImposto",
+            "dataType": "int64",
+            "sourceColumn": "CobrarImposto",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CobrarImposto",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CobrarCorrecao",
+            "dataType": "int64",
+            "sourceColumn": "CobrarCorrecao",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CobrarCorrecao",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CobrarCPMF",
+            "dataType": "int64",
+            "sourceColumn": "CobrarCPMF",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CobrarCPMF",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "RepassarLocador",
+            "dataType": "int64",
+            "sourceColumn": "RepassarLocador",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "RepassarLocador",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ValorDescontoCusto",
+            "dataType": "double",
+            "sourceColumn": "ValorDescontoCusto",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorDescontoCusto",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "CapitalDescontoCusto",
+            "dataType": "string",
+            "sourceColumn": "CapitalDescontoCusto",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalDescontoCusto",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ValorDescontoImposto",
+            "dataType": "double",
+            "sourceColumn": "ValorDescontoImposto",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorDescontoImposto",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "TotalParcelasGrupo",
+            "dataType": "int64",
+            "sourceColumn": "TotalParcelasGrupo",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "TotalParcelasGrupo",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataCadastro",
+            "dataType": "string",
+            "sourceColumn": "DataCadastro",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataCadastro",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataJurosComJuros",
+            "dataType": "int64",
+            "sourceColumn": "DataJurosComJuros",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "DataJurosComJuros",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Observacoes",
+            "dataType": "string",
+            "sourceColumn": "Observacoes",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Observacoes",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataInicioPeriodoAluguel",
+            "dataType": "string",
+            "sourceColumn": "DataInicioPeriodoAluguel",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataInicioPeriodoAluguel",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalRepasse",
+            "dataType": "string",
+            "sourceColumn": "CapitalRepasse",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalRepasse",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "NumeroBanco",
+            "dataType": "int64",
+            "sourceColumn": "NumeroBanco",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "NumeroBanco",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ContaBanco",
+            "dataType": "string",
+            "sourceColumn": "ContaBanco",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "ContaBanco",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "NumPCB",
+            "dataType": "int64",
+            "sourceColumn": "NumPCB",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "NumPCB",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataSegundaJuros",
+            "dataType": "string",
+            "sourceColumn": "DataSegundaJuros",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataSegundaJuros",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "PorcentagemSegundaJuros",
+            "dataType": "double",
+            "sourceColumn": "PorcentagemSegundaJuros",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "PorcentagemSegundaJuros",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "CarenciaAtraso",
+            "dataType": "int64",
+            "sourceColumn": "CarenciaAtraso",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CarenciaAtraso",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CarenciaAtrasoCorrecao",
+            "dataType": "int64",
+            "sourceColumn": "CarenciaAtrasoCorrecao",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CarenciaAtrasoCorrecao",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CobrarJurosProRata",
+            "dataType": "int64",
+            "sourceColumn": "CobrarJurosProRata",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CobrarJurosProRata",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TipoSeguro",
+            "dataType": "int64",
+            "sourceColumn": "TipoSeguro",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "TipoSeguro",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CobrarJurosProRataPrimeiroMes",
+            "dataType": "boolean",
+            "sourceColumn": "CobrarJurosProRataPrimeiroMes",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "sourceLineageTag": "CobrarJurosProRataPrimeiroMes",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalDescontoCondicional",
+            "dataType": "string",
+            "sourceColumn": "CapitalDescontoCondicional",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalDescontoCondicional",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "NumMDRPreferencial",
+            "dataType": "int64",
+            "sourceColumn": "NumMDRPreferencial",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "NumMDRPreferencial",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "processedDateTimeUTC",
+            "dataType": "string",
+            "sourceColumn": "processedDateTimeUTC",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "processedDateTimeUTC",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Dataset_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "ContasReceber",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "True"
+          }
+        ]
+      },
+      {
+        "name": "ContasReceberHist",
+        "sourceLineageTag": "[dbo].[ContasReceberHist]",
+        "columns": [
+          {
+            "name": "NumHistorico",
+            "dataType": "int64",
+            "sourceColumn": "NumHistorico",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "NumHistorico",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "NumParcelas",
+            "dataType": "int64",
+            "sourceColumn": "NumParcelas",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "NumParcelas",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Tipo",
+            "dataType": "string",
+            "sourceColumn": "Tipo",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Tipo",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "NumParcelasGeral",
+            "dataType": "int64",
+            "sourceColumn": "NumParcelasGeral",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "NumParcelasGeral",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Empresa",
+            "dataType": "int64",
+            "sourceColumn": "Empresa",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Empresa",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Obra",
+            "dataType": "string",
+            "sourceColumn": "Obra",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Obra",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "NumVendedor",
+            "dataType": "int64",
+            "sourceColumn": "NumVendedor",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "NumVendedor",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Data",
+            "dataType": "string",
+            "sourceColumn": "Data",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Data",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Valor",
+            "dataType": "double",
+            "sourceColumn": "Valor",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "Valor",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Status",
+            "dataType": "int64",
+            "sourceColumn": "Status",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Status",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "EmBanco",
+            "dataType": "int64",
+            "sourceColumn": "EmBanco",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "EmBanco",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Origem",
+            "dataType": "int64",
+            "sourceColumn": "Origem",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Origem",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Cliente",
+            "dataType": "int64",
+            "sourceColumn": "Cliente",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Cliente",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataProrrogacao",
+            "dataType": "string",
+            "sourceColumn": "DataProrrogacao",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataProrrogacao",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "JurosParcelas",
+            "dataType": "double",
+            "sourceColumn": "JurosParcelas",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "JurosParcelas",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "ComoParcelas",
+            "dataType": "string",
+            "sourceColumn": "ComoParcelas",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "ComoParcelas",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "IndiceReajuste",
+            "dataType": "string",
+            "sourceColumn": "IndiceReajuste",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "IndiceReajuste",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "AmortizacaoParcelas",
+            "dataType": "int64",
+            "sourceColumn": "AmortizacaoParcelas",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "AmortizacaoParcelas",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "InicioFimParcelas",
+            "dataType": "int64",
+            "sourceColumn": "InicioFimParcelas",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "InicioFimParcelas",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataIndiceParcelas",
+            "dataType": "string",
+            "sourceColumn": "DataIndiceParcelas",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataIndiceParcelas",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataJurosParcelas",
+            "dataType": "string",
+            "sourceColumn": "DataJurosParcelas",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataJurosParcelas",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Capital",
+            "dataType": "string",
+            "sourceColumn": "Capital",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Capital",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TotalParcelas",
+            "dataType": "int64",
+            "sourceColumn": "TotalParcelas",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "TotalParcelas",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataParcelas",
+            "dataType": "string",
+            "sourceColumn": "DataParcelas",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataParcelas",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ValorResiduo",
+            "dataType": "double",
+            "sourceColumn": "ValorResiduo",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorResiduo",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "GrupoIndice",
+            "dataType": "int64",
+            "sourceColumn": "GrupoIndice",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "GrupoIndice",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "GrupoParcelas",
+            "dataType": "int64",
+            "sourceColumn": "GrupoParcelas",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "GrupoParcelas",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "StatusCobranca",
+            "dataType": "string",
+            "sourceColumn": "StatusCobranca",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "StatusCobranca",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalCorrecaoAtraso",
+            "dataType": "string",
+            "sourceColumn": "CapitalCorrecaoAtraso",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalCorrecaoAtraso",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalJuros",
+            "dataType": "string",
+            "sourceColumn": "CapitalJuros",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalJuros",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalCorrecao",
+            "dataType": "string",
+            "sourceColumn": "CapitalCorrecao",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalCorrecao",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalMulta",
+            "dataType": "string",
+            "sourceColumn": "CapitalMulta",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalMulta",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalJurosAtraso",
+            "dataType": "string",
+            "sourceColumn": "CapitalJurosAtraso",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalJurosAtraso",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalAcrescimo",
+            "dataType": "string",
+            "sourceColumn": "CapitalAcrescimo",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalAcrescimo",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalDesconto",
+            "dataType": "string",
+            "sourceColumn": "CapitalDesconto",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalDesconto",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Anexos",
+            "dataType": "int64",
+            "sourceColumn": "Anexos",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Anexos",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalDescontoAntecipado",
+            "dataType": "string",
+            "sourceColumn": "CapitalDescontoAntecipado",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalDescontoAntecipado",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalTaxaBoleto",
+            "dataType": "string",
+            "sourceColumn": "CapitalTaxaBoleto",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalTaxaBoleto",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ValorTaxaBoleto",
+            "dataType": "double",
+            "sourceColumn": "ValorTaxaBoleto",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorTaxaBoleto",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "NumContrato",
+            "dataType": "int64",
+            "sourceColumn": "NumContrato",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "NumContrato",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "OrigemCusto",
+            "dataType": "int64",
+            "sourceColumn": "OrigemCusto",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "OrigemCusto",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CobrarMulta",
+            "dataType": "int64",
+            "sourceColumn": "CobrarMulta",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CobrarMulta",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CobrarJurosAtraso",
+            "dataType": "int64",
+            "sourceColumn": "CobrarJurosAtraso",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CobrarJurosAtraso",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CobrarTaxaAdm",
+            "dataType": "int64",
+            "sourceColumn": "CobrarTaxaAdm",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CobrarTaxaAdm",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CobrarImposto",
+            "dataType": "int64",
+            "sourceColumn": "CobrarImposto",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CobrarImposto",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CobrarCorrecao",
+            "dataType": "int64",
+            "sourceColumn": "CobrarCorrecao",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CobrarCorrecao",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CobrarCPMF",
+            "dataType": "int64",
+            "sourceColumn": "CobrarCPMF",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CobrarCPMF",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "RepassarLocador",
+            "dataType": "int64",
+            "sourceColumn": "RepassarLocador",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "RepassarLocador",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ValorDescontoCusto",
+            "dataType": "double",
+            "sourceColumn": "ValorDescontoCusto",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorDescontoCusto",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "CapitalDescontoCusto",
+            "dataType": "string",
+            "sourceColumn": "CapitalDescontoCusto",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalDescontoCusto",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ValorDescontoImposto",
+            "dataType": "double",
+            "sourceColumn": "ValorDescontoImposto",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorDescontoImposto",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "TotalParcelasGrupo",
+            "dataType": "int64",
+            "sourceColumn": "TotalParcelasGrupo",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "TotalParcelasGrupo",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataCadastro",
+            "dataType": "string",
+            "sourceColumn": "DataCadastro",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataCadastro",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataJurosComJuros",
+            "dataType": "int64",
+            "sourceColumn": "DataJurosComJuros",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "DataJurosComJuros",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Observacoes",
+            "dataType": "string",
+            "sourceColumn": "Observacoes",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Observacoes",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataInicioPeriodoAluguel",
+            "dataType": "string",
+            "sourceColumn": "DataInicioPeriodoAluguel",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataInicioPeriodoAluguel",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalRepasse",
+            "dataType": "string",
+            "sourceColumn": "CapitalRepasse",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalRepasse",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "NumeroBanco",
+            "dataType": "int64",
+            "sourceColumn": "NumeroBanco",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "NumeroBanco",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ContaBanco",
+            "dataType": "string",
+            "sourceColumn": "ContaBanco",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "ContaBanco",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "NumPCB",
+            "dataType": "int64",
+            "sourceColumn": "NumPCB",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "NumPCB",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataSegundaJuros",
+            "dataType": "string",
+            "sourceColumn": "DataSegundaJuros",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataSegundaJuros",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "PorcentagemSegundaJuros",
+            "dataType": "double",
+            "sourceColumn": "PorcentagemSegundaJuros",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "PorcentagemSegundaJuros",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "CarenciaAtraso",
+            "dataType": "int64",
+            "sourceColumn": "CarenciaAtraso",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CarenciaAtraso",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CarenciaAtrasoCorrecao",
+            "dataType": "int64",
+            "sourceColumn": "CarenciaAtrasoCorrecao",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CarenciaAtrasoCorrecao",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CobrarJurosProRata",
+            "dataType": "int64",
+            "sourceColumn": "CobrarJurosProRata",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CobrarJurosProRata",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TipoSeguro",
+            "dataType": "int64",
+            "sourceColumn": "TipoSeguro",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "TipoSeguro",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CobrarJurosProRataPrimeiroMes",
+            "dataType": "boolean",
+            "sourceColumn": "CobrarJurosProRataPrimeiroMes",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "sourceLineageTag": "CobrarJurosProRataPrimeiroMes",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalDescontoCondicional",
+            "dataType": "string",
+            "sourceColumn": "CapitalDescontoCondicional",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalDescontoCondicional",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Renegociada",
+            "dataType": "boolean",
+            "sourceColumn": "Renegociada",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "sourceLineageTag": "Renegociada",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "NumMDRPreferencial",
+            "dataType": "int64",
+            "sourceColumn": "NumMDRPreferencial",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "NumMDRPreferencial",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "processedDateTimeUTC",
+            "dataType": "string",
+            "sourceColumn": "processedDateTimeUTC",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "processedDateTimeUTC",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Dataset_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "ContasReceberHist",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "True"
+          }
+        ]
+      },
+      {
+        "name": "Vendas",
+        "sourceLineageTag": "[dbo].[Vendas]",
+        "columns": [
+          {
+            "name": "Empresa",
+            "dataType": "int64",
+            "sourceColumn": "Empresa",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Empresa",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Obra",
+            "dataType": "string",
+            "sourceColumn": "Obra",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Obra",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Numero",
+            "dataType": "int64",
+            "sourceColumn": "Numero",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Numero",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Contrato",
+            "dataType": "int64",
+            "sourceColumn": "Contrato",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Contrato",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Vendedor",
+            "dataType": "int64",
+            "sourceColumn": "Vendedor",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Vendedor",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Cliente",
+            "dataType": "int64",
+            "sourceColumn": "Cliente",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Cliente",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ValorTotal",
+            "dataType": "double",
+            "sourceColumn": "ValorTotal",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorTotal",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Juros",
+            "dataType": "double",
+            "sourceColumn": "Juros",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "Juros",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Multa",
+            "dataType": "double",
+            "sourceColumn": "Multa",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "Multa",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Desconto",
+            "dataType": "double",
+            "sourceColumn": "Desconto",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "Desconto",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Usuario",
+            "dataType": "string",
+            "sourceColumn": "Usuario",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Usuario",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "InternoExterno",
+            "dataType": "string",
+            "sourceColumn": "InternoExterno",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "InternoExterno",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Data",
+            "dataType": "string",
+            "sourceColumn": "Data",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Data",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Status",
+            "dataType": "int64",
+            "sourceColumn": "Status",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Status",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "UsuarioStatus",
+            "dataType": "string",
+            "sourceColumn": "UsuarioStatus",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "UsuarioStatus",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Acrescimo",
+            "dataType": "double",
+            "sourceColumn": "Acrescimo",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "Acrescimo",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "PlanoIndexador",
+            "dataType": "int64",
+            "sourceColumn": "PlanoIndexador",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "PlanoIndexador",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "JurosContrato",
+            "dataType": "int64",
+            "sourceColumn": "JurosContrato",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "JurosContrato",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Adiantamento",
+            "dataType": "int64",
+            "sourceColumn": "Adiantamento",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Adiantamento",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "StatusEscritura",
+            "dataType": "string",
+            "sourceColumn": "StatusEscritura",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "StatusEscritura",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "StatusCobranca",
+            "dataType": "string",
+            "sourceColumn": "StatusCobranca",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "StatusCobranca",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ValorCorretagem",
+            "dataType": "double",
+            "sourceColumn": "ValorCorretagem",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorCorretagem",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "ValorLiberarCorretor",
+            "dataType": "double",
+            "sourceColumn": "ValorLiberarCorretor",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorLiberarCorretor",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "ReajusteAnual",
+            "dataType": "int64",
+            "sourceColumn": "ReajusteAnual",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "ReajusteAnual",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "GerarResiduo",
+            "dataType": "int64",
+            "sourceColumn": "GerarResiduo",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "GerarResiduo",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CarenciaAtraso",
+            "dataType": "int64",
+            "sourceColumn": "CarenciaAtraso",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CarenciaAtraso",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "RetroagirIndice",
+            "dataType": "int64",
+            "sourceColumn": "RetroagirIndice",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "RetroagirIndice",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataBaseResiduo",
+            "dataType": "string",
+            "sourceColumn": "DataBaseResiduo",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataBaseResiduo",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CorrecaoAtraso",
+            "dataType": "int64",
+            "sourceColumn": "CorrecaoAtraso",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CorrecaoAtraso",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CorrecaoProRata",
+            "dataType": "int64",
+            "sourceColumn": "CorrecaoProRata",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CorrecaoProRata",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Anexos",
+            "dataType": "int64",
+            "sourceColumn": "Anexos",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Anexos",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataCessao",
+            "dataType": "string",
+            "sourceColumn": "DataCessao",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataCessao",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataCancelamento",
+            "dataType": "string",
+            "sourceColumn": "DataCancelamento",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataCancelamento",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CodigoDVG",
+            "dataType": "int64",
+            "sourceColumn": "CodigoDVG",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CodigoDVG",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "NumeroFinanciamento",
+            "dataType": "int64",
+            "sourceColumn": "NumeroFinanciamento",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "NumeroFinanciamento",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "AniversarioContrato",
+            "dataType": "int64",
+            "sourceColumn": "AniversarioContrato",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "AniversarioContrato",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CobrarTaxaBoleto",
+            "dataType": "int64",
+            "sourceColumn": "CobrarTaxaBoleto",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CobrarTaxaBoleto",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataCadastro",
+            "dataType": "string",
+            "sourceColumn": "DataCadastro",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataCadastro",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "AlmoxarifadoCentral",
+            "dataType": "int64",
+            "sourceColumn": "AlmoxarifadoCentral",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "AlmoxarifadoCentral",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ObraFiscal",
+            "dataType": "string",
+            "sourceColumn": "ObraFiscal",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "ObraFiscal",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TipoVenda",
+            "dataType": "int64",
+            "sourceColumn": "TipoVenda",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "TipoVenda",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DiaRepasse",
+            "dataType": "int64",
+            "sourceColumn": "DiaRepasse",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "DiaRepasse",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ValorProvisaoCurtoPrazo",
+            "dataType": "double",
+            "sourceColumn": "ValorProvisaoCurtoPrazo",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorProvisaoCurtoPrazo",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "ValorProvisaoLongoPrazo",
+            "dataType": "double",
+            "sourceColumn": "ValorProvisaoLongoPrazo",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorProvisaoLongoPrazo",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "CapitalProvisaoCurtoPrazo",
+            "dataType": "string",
+            "sourceColumn": "CapitalProvisaoCurtoPrazo",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalProvisaoCurtoPrazo",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalProvisaoLongoPrazo",
+            "dataType": "string",
+            "sourceColumn": "CapitalProvisaoLongoPrazo",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalProvisaoLongoPrazo",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CarenciaAtrasoCorrecao",
+            "dataType": "int64",
+            "sourceColumn": "CarenciaAtrasoCorrecao",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CarenciaAtrasoCorrecao",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "AnteciparCorrecao",
+            "dataType": "int64",
+            "sourceColumn": "AnteciparCorrecao",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "AnteciparCorrecao",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CobrarJurosRecebimentoPosChave",
+            "dataType": "int64",
+            "sourceColumn": "CobrarJurosRecebimentoPosChave",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "CobrarJurosRecebimentoPosChave",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataInicioContrato",
+            "dataType": "string",
+            "sourceColumn": "DataInicioContrato",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataInicioContrato",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataFimContrato",
+            "dataType": "string",
+            "sourceColumn": "DataFimContrato",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataFimContrato",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TipoFianca",
+            "dataType": "int64",
+            "sourceColumn": "TipoFianca",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "TipoFianca",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Texto1Fianca",
+            "dataType": "string",
+            "sourceColumn": "Texto1Fianca",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Texto1Fianca",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Texto2Fianca",
+            "dataType": "string",
+            "sourceColumn": "Texto2Fianca",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Texto2Fianca",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Texto3Fianca",
+            "dataType": "string",
+            "sourceColumn": "Texto3Fianca",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Texto3Fianca",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DataFianca",
+            "dataType": "string",
+            "sourceColumn": "DataFianca",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataFianca",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ValorFianca",
+            "dataType": "double",
+            "sourceColumn": "ValorFianca",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorFianca",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "NomeSeguradoraIncendio",
+            "dataType": "string",
+            "sourceColumn": "NomeSeguradoraIncendio",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "NomeSeguradoraIncendio",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ApoliceSeguradoraIncendio",
+            "dataType": "string",
+            "sourceColumn": "ApoliceSeguradoraIncendio",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "ApoliceSeguradoraIncendio",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ValorSeguradoraIncendio",
+            "dataType": "double",
+            "sourceColumn": "ValorSeguradoraIncendio",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorSeguradoraIncendio",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "DataVencimentoSeguradoraIncendio",
+            "dataType": "string",
+            "sourceColumn": "DataVencimentoSeguradoraIncendio",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DataVencimentoSeguradoraIncendio",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "MultaFracionada",
+            "dataType": "boolean",
+            "sourceColumn": "MultaFracionada",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "sourceLineageTag": "MultaFracionada",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "AnteciparJurosLinear",
+            "dataType": "boolean",
+            "sourceColumn": "AnteciparJurosLinear",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "sourceLineageTag": "AnteciparJurosLinear",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ValorDescontoImposto",
+            "dataType": "double",
+            "sourceColumn": "ValorDescontoImposto",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorDescontoImposto",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "PeriodoMesReajuste",
+            "dataType": "int64",
+            "sourceColumn": "PeriodoMesReajuste",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "PeriodoMesReajuste",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "HistoricoLancamento",
+            "dataType": "string",
+            "sourceColumn": "HistoricoLancamento",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "HistoricoLancamento",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "HistoricoLancamentoRecebimento",
+            "dataType": "string",
+            "sourceColumn": "HistoricoLancamentoRecebimento",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "HistoricoLancamentoRecebimento",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "HistoricoLancamentoJurosCorrecao",
+            "dataType": "string",
+            "sourceColumn": "HistoricoLancamentoJurosCorrecao",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "HistoricoLancamentoJurosCorrecao",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ZerarCorrecaoNegativa",
+            "dataType": "boolean",
+            "sourceColumn": "ZerarCorrecaoNegativa",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "sourceLineageTag": "ZerarCorrecaoNegativa",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "JurosAtrasoMensal",
+            "dataType": "boolean",
+            "sourceColumn": "JurosAtrasoMensal",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "sourceLineageTag": "JurosAtrasoMensal",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CorrecaoCrescente",
+            "dataType": "boolean",
+            "sourceColumn": "CorrecaoCrescente",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "sourceLineageTag": "CorrecaoCrescente",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "SPEDPisCofins",
+            "dataType": "boolean",
+            "sourceColumn": "SPEDPisCofins",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "sourceLineageTag": "SPEDPisCofins",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CorrecaoAtrasoPersonalizada",
+            "dataType": "boolean",
+            "sourceColumn": "CorrecaoAtrasoPersonalizada",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "sourceLineageTag": "CorrecaoAtrasoPersonalizada",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ContratoCEF",
+            "dataType": "string",
+            "sourceColumn": "ContratoCEF",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "ContratoCEF",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Atividade",
+            "dataType": "int64",
+            "sourceColumn": "Atividade",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "Atividade",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ValorProvisaoCurtoPrazoBaixa",
+            "dataType": "double",
+            "sourceColumn": "ValorProvisaoCurtoPrazoBaixa",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorProvisaoCurtoPrazoBaixa",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "ValorProvisaoLongoPrazoBaixa",
+            "dataType": "double",
+            "sourceColumn": "ValorProvisaoLongoPrazoBaixa",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorProvisaoLongoPrazoBaixa",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "ValorProvisaoCurtoPrazoCessao",
+            "dataType": "double",
+            "sourceColumn": "ValorProvisaoCurtoPrazoCessao",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorProvisaoCurtoPrazoCessao",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "ValorProvisaoLongoPrazoCessao",
+            "dataType": "double",
+            "sourceColumn": "ValorProvisaoLongoPrazoCessao",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorProvisaoLongoPrazoCessao",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "CapitalProvisaoCurtoPrazoBaixa",
+            "dataType": "string",
+            "sourceColumn": "CapitalProvisaoCurtoPrazoBaixa",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalProvisaoCurtoPrazoBaixa",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CapitalProvisaoLongoPrazoBaixa",
+            "dataType": "string",
+            "sourceColumn": "CapitalProvisaoLongoPrazoBaixa",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CapitalProvisaoLongoPrazoBaixa",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "HistoricoLancamentoBaixaProvisao",
+            "dataType": "string",
+            "sourceColumn": "HistoricoLancamentoBaixaProvisao",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "HistoricoLancamentoBaixaProvisao",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Validador",
+            "dataType": "double",
+            "sourceColumn": "Validador",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "Validador",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "JurosAnual",
+            "dataType": "int64",
+            "sourceColumn": "JurosAnual",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "JurosAnual",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "PeriodoMesJuros",
+            "dataType": "int64",
+            "sourceColumn": "PeriodoMesJuros",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "PeriodoMesJuros",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ValorPrestacaoServico",
+            "dataType": "double",
+            "sourceColumn": "ValorPrestacaoServico",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ValorPrestacaoServico",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "AnteciparCorrecaoProximoPeriodo",
+            "dataType": "boolean",
+            "sourceColumn": "AnteciparCorrecaoProximoPeriodo",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "sourceLineageTag": "AnteciparCorrecaoProximoPeriodo",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "RET",
+            "dataType": "boolean",
+            "sourceColumn": "RET",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "sourceLineageTag": "RET",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "NumeroRET",
+            "dataType": "int64",
+            "sourceColumn": "NumeroRET",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "NumeroRET",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "NumeroCSF",
+            "dataType": "int64",
+            "sourceColumn": "NumeroCSF",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "NumeroCSF",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "UtilizarDescontoUltimaParcela",
+            "dataType": "boolean",
+            "sourceColumn": "UtilizarDescontoUltimaParcela",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "sourceLineageTag": "UtilizarDescontoUltimaParcela",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "processedDateTimeUTC",
+            "dataType": "string",
+            "sourceColumn": "processedDateTimeUTC",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "processedDateTimeUTC",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Dataset_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Vendas",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "True"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "4ff0e396-f368-4203-a5fb-716d8e29f76a",
+        "fromTable": "Vendas",
+        "fromColumn": "Anexos",
+        "toTable": "ContasReceber",
+        "toColumn": "Anexos",
+        "relyOnReferentialIntegrity": true,
+        "securityFilteringBehavior": "none"
+      }
+    ],
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "kind": "m",
+        "expression": "let\n    database = {{TDS_Endpoint}}\nin\n    database\n"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"exec_requests_history\",\"long_running_queries\",\"frequently_run_queries\",\"exec_sessions_history\",\"Vendas\",\"ContasReceber\",\"ContasReceberHist\",\"Calendar\"]"
+      },
+      {
+        "name": "SourceLineageTagType",
+        "value": "DatabaseFullyQualifiedName"
+      }
+    ]
+  }
+}

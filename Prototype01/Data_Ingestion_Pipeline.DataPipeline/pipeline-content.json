@@ -1,0 +1,104 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "ForEach",
+        "typeProperties": {
+          "items": {
+            "value": "@createArray(\n    'Vendas',\n    'ContasReceberHist',\n    'ContasReceber'\n)",
+            "type": "Expression"
+          },
+          "activities": [
+            {
+              "type": "Copy",
+              "typeProperties": {
+                "source": {
+                  "type": "AzureSqlSource",
+                  "partitionOption": "None",
+                  "queryTimeout": "02:00:00",
+                  "datasetSettings": {
+                    "type": "AzureSqlTable",
+                    "typeProperties": {
+                      "schema": "dbo",
+                      "table": {
+                        "value": "@item()",
+                        "type": "Expression"
+                      },
+                      "database": "UAUFGR"
+                    },
+                    "schema": [],
+                    "externalReferences": {
+                      "connection": "744270a9-3940-4b27-95b3-363d497bc20e"
+                    },
+                    "annotations": []
+                  }
+                },
+                "sink": {
+                  "type": "AvroSink",
+                  "storeSettings": {
+                    "type": "LakehouseWriteSettings",
+                    "maxConcurrentConnections": 3,
+                    "copyBehavior": "PreserveHierarchy"
+                  },
+                  "formatSettings": {
+                    "type": "AvroWriteSettings"
+                  },
+                  "datasetSettings": {
+                    "type": "Avro",
+                    "typeProperties": {
+                      "location": {
+                        "type": "LakehouseLocation",
+                        "folderPath": {
+                          "value": "@formatDateTime(utcnow(), 'yyyy-dd-MM')",
+                          "type": "Expression"
+                        },
+                        "fileName": {
+                          "value": "@concat(item(), '.avro')",
+                          "type": "Expression"
+                        }
+                      }
+                    },
+                    "schema": {},
+                    "linkedService": {
+                      "properties": {
+                        "type": "Lakehouse",
+                        "typeProperties": {
+                          "artifactId": "3c562624-258f-4f81-a18d-2bceb2686e0d",
+                          "workspaceId": "00000000-0000-0000-0000-000000000000",
+                          "rootFolder": "Files"
+                        },
+                        "annotations": []
+                      },
+                      "name": "Staging_Lakehouse"
+                    },
+                    "annotations": []
+                  }
+                },
+                "translator": {
+                  "type": "TabularTranslator",
+                  "typeConversion": true,
+                  "typeConversionSettings": {
+                    "allowDataTruncation": true,
+                    "treatBooleanAsNumber": false
+                  }
+                },
+                "enableStaging": false
+              },
+              "policy": {
+                "timeout": "0.12:00:00",
+                "retry": 0,
+                "retryIntervalInSeconds": 30,
+                "secureInput": false,
+                "secureOutput": false
+              },
+              "name": "Copiar Tabelas",
+              "dependsOn": []
+            }
+          ]
+        },
+        "name": "Loop em Tabelas",
+        "dependsOn": []
+      }
+    ]
+  }
+}

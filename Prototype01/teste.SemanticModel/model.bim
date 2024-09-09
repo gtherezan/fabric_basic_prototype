@@ -1,0 +1,1181 @@
+{
+  "compatibilityLevel": 1604,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.132.7385.2 (Main)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"DatabaseQuery\"]"
+      }
+    ],
+    "collation": "Latin1_General_100_BIN2_UTF8",
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "annotations": [
+          {
+            "name": "PBI_IncludeFutureArtifacts",
+            "value": "False"
+          }
+        ],
+        "expression": [
+          "let",
+          "    database = Sql.Database(\"P4JC7OG4NZJEZNWINRQ5ZVL6UI-WWZYRFN6343ELMFRHFNCAOFZ2I.datawarehouse.fabric.microsoft.com\", \"e4bc7946-6b4d-44c4-a345-daf788a841e6\")",
+          "in",
+          "    database"
+        ],
+        "kind": "m",
+        "lineageTag": "715a3666-7713-4913-b9ac-7444ca074336"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "ContasReceber",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "NumParcelas",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0d91f06d-21f6-4425-83c5-c85eee7d6baf",
+            "sourceColumn": "NumParcelas",
+            "sourceLineageTag": "NumParcelas",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Tipo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "808f280f-10ec-4429-a31f-a5e49c898062",
+            "sourceColumn": "Tipo",
+            "sourceLineageTag": "Tipo",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NumParcelasGeral",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5d120955-fee0-4390-ab2c-db0285fe1c8b",
+            "sourceColumn": "NumParcelasGeral",
+            "sourceLineageTag": "NumParcelasGeral",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Empresa",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "dbf4fb40-42b9-4edf-b424-0cd2cf82654a",
+            "sourceColumn": "Empresa",
+            "sourceLineageTag": "Empresa",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Obra",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "785af12e-d1b3-4abf-be9b-50a1627291ee",
+            "sourceColumn": "Obra",
+            "sourceLineageTag": "Obra",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NumVendedor",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "bc4bbba2-5071-44d1-a2b5-cc0c54f949a2",
+            "sourceColumn": "NumVendedor",
+            "sourceLineageTag": "NumVendedor",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Data",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bfa870e6-58ee-400d-98d8-5128326179b0",
+            "sourceColumn": "Data",
+            "sourceLineageTag": "Data",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Valor",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "fc321294-7ad0-4b62-a31a-118b4607e216",
+            "sourceColumn": "Valor",
+            "sourceLineageTag": "Valor",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "807a4b67-4de3-4df5-ac73-24eac798f062",
+            "sourceColumn": "Status",
+            "sourceLineageTag": "Status",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "EmBanco",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ddcbc6ed-46de-4d23-b1ff-e73694838f99",
+            "sourceColumn": "EmBanco",
+            "sourceLineageTag": "EmBanco",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Origem",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "bba132e4-c2c6-410c-a586-fbd81d054067",
+            "sourceColumn": "Origem",
+            "sourceLineageTag": "Origem",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Cliente",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2a34312e-350b-46ba-87cd-7943c41134ca",
+            "sourceColumn": "Cliente",
+            "sourceLineageTag": "Cliente",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DataProrrogacao",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1e83d9d7-1f63-4062-913f-7cf6aba21ea7",
+            "sourceColumn": "DataProrrogacao",
+            "sourceLineageTag": "DataProrrogacao",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "JurosParcelas",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "dd7cf025-ff06-4c9f-84a4-e490309c7e52",
+            "sourceColumn": "JurosParcelas",
+            "sourceLineageTag": "JurosParcelas",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ComoParcelas",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "257786e3-2fc6-4f96-8760-f600335372c6",
+            "sourceColumn": "ComoParcelas",
+            "sourceLineageTag": "ComoParcelas",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "IndiceReajuste",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "da771f36-ba56-434a-b39a-0765aef8a80c",
+            "sourceColumn": "IndiceReajuste",
+            "sourceLineageTag": "IndiceReajuste",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AmortizacaoParcelas",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7525429e-3988-4abc-a176-c291d0481a4d",
+            "sourceColumn": "AmortizacaoParcelas",
+            "sourceLineageTag": "AmortizacaoParcelas",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "InicioFimParcelas",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9d3d6204-84bd-4d8e-885d-2014754865f6",
+            "sourceColumn": "InicioFimParcelas",
+            "sourceLineageTag": "InicioFimParcelas",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DataIndiceParcelas",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b9ce59cf-a8dc-40da-9cb3-c28d2370979c",
+            "sourceColumn": "DataIndiceParcelas",
+            "sourceLineageTag": "DataIndiceParcelas",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DataJurosParcelas",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "68aa7d1c-4aad-4d12-afa3-c073e1f7472e",
+            "sourceColumn": "DataJurosParcelas",
+            "sourceLineageTag": "DataJurosParcelas",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Capital",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5fa60d86-0f97-467e-b60d-f88f608893c7",
+            "sourceColumn": "Capital",
+            "sourceLineageTag": "Capital",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TotalParcelas",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0c229139-3e58-4b3d-80de-b8f95d45d9b6",
+            "sourceColumn": "TotalParcelas",
+            "sourceLineageTag": "TotalParcelas",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DataParcelas",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8a5e9c99-dfe9-4bf0-a5b3-fddc28444e74",
+            "sourceColumn": "DataParcelas",
+            "sourceLineageTag": "DataParcelas",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ValorResiduo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "4ab5eedf-33c6-4707-9f20-905a0509e6ec",
+            "sourceColumn": "ValorResiduo",
+            "sourceLineageTag": "ValorResiduo",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "GrupoIndice",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "aee47076-f193-4977-adfe-5ca02782f739",
+            "sourceColumn": "GrupoIndice",
+            "sourceLineageTag": "GrupoIndice",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "GrupoParcelas",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1f53ceb2-d677-487b-84e7-6f949223a646",
+            "sourceColumn": "GrupoParcelas",
+            "sourceLineageTag": "GrupoParcelas",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "StatusCobranca",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "386e6df1-058c-4524-b81d-9c68fec370bf",
+            "sourceColumn": "StatusCobranca",
+            "sourceLineageTag": "StatusCobranca",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CapitalCorrecaoAtraso",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b23c3943-82f0-49f0-99f5-703220dcd10d",
+            "sourceColumn": "CapitalCorrecaoAtraso",
+            "sourceLineageTag": "CapitalCorrecaoAtraso",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CapitalJuros",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b1a7171f-db96-4223-97a5-bede6c9ebda1",
+            "sourceColumn": "CapitalJuros",
+            "sourceLineageTag": "CapitalJuros",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CapitalCorrecao",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0b7093f5-1999-4b8a-959e-27c6eb104b95",
+            "sourceColumn": "CapitalCorrecao",
+            "sourceLineageTag": "CapitalCorrecao",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CapitalMulta",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dad180d5-e0a9-4cb9-bc9f-1ad558ca3607",
+            "sourceColumn": "CapitalMulta",
+            "sourceLineageTag": "CapitalMulta",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CapitalJurosAtraso",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7e3e4e35-0abc-425f-81a3-81811320ff23",
+            "sourceColumn": "CapitalJurosAtraso",
+            "sourceLineageTag": "CapitalJurosAtraso",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CapitalAcrescimo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "03effd86-d1bf-4b84-a3b9-f4d4c2b86d97",
+            "sourceColumn": "CapitalAcrescimo",
+            "sourceLineageTag": "CapitalAcrescimo",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CapitalDesconto",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a540232d-874b-4f9d-b4c6-23757d45714d",
+            "sourceColumn": "CapitalDesconto",
+            "sourceLineageTag": "CapitalDesconto",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Anexos",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ff5cfcba-b01d-4927-bb7a-0ebe3e8bf212",
+            "sourceColumn": "Anexos",
+            "sourceLineageTag": "Anexos",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CapitalDescontoAntecipado",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d28a7755-d93a-4ab8-9b12-ae544d7a56c6",
+            "sourceColumn": "CapitalDescontoAntecipado",
+            "sourceLineageTag": "CapitalDescontoAntecipado",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CapitalTaxaBoleto",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "856f0825-a2db-4c15-917d-080a83196fef",
+            "sourceColumn": "CapitalTaxaBoleto",
+            "sourceLineageTag": "CapitalTaxaBoleto",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ValorTaxaBoleto",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "92224058-bc35-4339-ae7a-8f15acde2ecf",
+            "sourceColumn": "ValorTaxaBoleto",
+            "sourceLineageTag": "ValorTaxaBoleto",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NumContrato",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e6fa90d5-06ea-42ff-9db5-b2bc844a08f3",
+            "sourceColumn": "NumContrato",
+            "sourceLineageTag": "NumContrato",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "OrigemCusto",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "99c99634-036f-4dce-b61e-69e4ccc3a96f",
+            "sourceColumn": "OrigemCusto",
+            "sourceLineageTag": "OrigemCusto",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CobrarMulta",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b58e60da-7a79-4f36-920b-cfdde2849db0",
+            "sourceColumn": "CobrarMulta",
+            "sourceLineageTag": "CobrarMulta",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CobrarJurosAtraso",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2130a355-8fdc-4945-ab0d-3011c2d303e7",
+            "sourceColumn": "CobrarJurosAtraso",
+            "sourceLineageTag": "CobrarJurosAtraso",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CobrarTaxaAdm",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "315a52c2-5e00-4fbb-82fd-202c0cd420a3",
+            "sourceColumn": "CobrarTaxaAdm",
+            "sourceLineageTag": "CobrarTaxaAdm",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CobrarImposto",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "328e92cc-0084-4d1e-8182-454c20f59ea4",
+            "sourceColumn": "CobrarImposto",
+            "sourceLineageTag": "CobrarImposto",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CobrarCorrecao",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "caab1830-b9c5-423d-931e-e6820aba267c",
+            "sourceColumn": "CobrarCorrecao",
+            "sourceLineageTag": "CobrarCorrecao",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CobrarCPMF",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "872c3077-c326-45a5-86c6-f68d88aa154e",
+            "sourceColumn": "CobrarCPMF",
+            "sourceLineageTag": "CobrarCPMF",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "RepassarLocador",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "21c495f7-7a8f-4af2-94b9-51905e62d067",
+            "sourceColumn": "RepassarLocador",
+            "sourceLineageTag": "RepassarLocador",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ValorDescontoCusto",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "5ddb130a-6742-4e42-8a70-2dde176f19f1",
+            "sourceColumn": "ValorDescontoCusto",
+            "sourceLineageTag": "ValorDescontoCusto",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CapitalDescontoCusto",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0b962039-58ae-499c-93c2-5d8e6db687ab",
+            "sourceColumn": "CapitalDescontoCusto",
+            "sourceLineageTag": "CapitalDescontoCusto",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ValorDescontoImposto",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "6f53bb0e-b6fd-4d8a-b2fb-e7692945fbd4",
+            "sourceColumn": "ValorDescontoImposto",
+            "sourceLineageTag": "ValorDescontoImposto",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "TotalParcelasGrupo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4de57da2-93bd-4cbd-96ef-76b4884874b5",
+            "sourceColumn": "TotalParcelasGrupo",
+            "sourceLineageTag": "TotalParcelasGrupo",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DataCadastro",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fdecfbb0-8e6a-4683-913e-ae144c079ffa",
+            "sourceColumn": "DataCadastro",
+            "sourceLineageTag": "DataCadastro",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DataJurosComJuros",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "acf90875-e0ad-4229-82d7-b57e98bf26d9",
+            "sourceColumn": "DataJurosComJuros",
+            "sourceLineageTag": "DataJurosComJuros",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Observacoes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1b08f160-1eb4-4e4d-b5c2-1592b14166f8",
+            "sourceColumn": "Observacoes",
+            "sourceLineageTag": "Observacoes",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DataInicioPeriodoAluguel",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "db630e0f-e102-4ca4-b07c-352194af99f5",
+            "sourceColumn": "DataInicioPeriodoAluguel",
+            "sourceLineageTag": "DataInicioPeriodoAluguel",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CapitalRepasse",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1c7d978c-e3c3-4174-a995-178cb741003d",
+            "sourceColumn": "CapitalRepasse",
+            "sourceLineageTag": "CapitalRepasse",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NumeroBanco",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4befca55-da74-4235-9d12-e5bf8ab7ba9a",
+            "sourceColumn": "NumeroBanco",
+            "sourceLineageTag": "NumeroBanco",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ContaBanco",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5281b034-b0c2-4ccf-8a75-33dbe06c9aea",
+            "sourceColumn": "ContaBanco",
+            "sourceLineageTag": "ContaBanco",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NumPCB",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "00f484cc-7479-48a1-80b9-7cad8df90bdd",
+            "sourceColumn": "NumPCB",
+            "sourceLineageTag": "NumPCB",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DataSegundaJuros",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "795f107f-a3b5-484e-929a-32652766fa89",
+            "sourceColumn": "DataSegundaJuros",
+            "sourceLineageTag": "DataSegundaJuros",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PorcentagemSegundaJuros",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "045569dc-3625-4735-8765-1184b88bb3f4",
+            "sourceColumn": "PorcentagemSegundaJuros",
+            "sourceLineageTag": "PorcentagemSegundaJuros",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CarenciaAtraso",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b44f4085-4405-4712-875e-0506f0f93cfb",
+            "sourceColumn": "CarenciaAtraso",
+            "sourceLineageTag": "CarenciaAtraso",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CarenciaAtrasoCorrecao",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "fca959f1-1e7b-4d84-8ce4-eac078d7e285",
+            "sourceColumn": "CarenciaAtrasoCorrecao",
+            "sourceLineageTag": "CarenciaAtrasoCorrecao",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CobrarJurosProRata",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "23b41753-f715-477f-9ad4-23e3e92550e0",
+            "sourceColumn": "CobrarJurosProRata",
+            "sourceLineageTag": "CobrarJurosProRata",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "TipoSeguro",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "79189433-e980-43d7-b2b0-92013519e66b",
+            "sourceColumn": "TipoSeguro",
+            "sourceLineageTag": "TipoSeguro",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CobrarJurosProRataPrimeiroMes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "8f8c475e-fb62-4e46-acac-33b68d704c10",
+            "sourceColumn": "CobrarJurosProRataPrimeiroMes",
+            "sourceLineageTag": "CobrarJurosProRataPrimeiroMes",
+            "sourceProviderType": "bit",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CapitalDescontoCondicional",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8c00c2ce-d8ef-41e8-834e-15c24d7ee250",
+            "sourceColumn": "CapitalDescontoCondicional",
+            "sourceLineageTag": "CapitalDescontoCondicional",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NumMDRPreferencial",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "fb3724c3-3c92-4658-865d-800d4cdbc14c",
+            "sourceColumn": "NumMDRPreferencial",
+            "sourceLineageTag": "NumMDRPreferencial",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "processedDateTimeUTC",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f47a6a07-f9ae-42fc-9e78-334c6bb2d996",
+            "sourceColumn": "processedDateTimeUTC",
+            "sourceLineageTag": "processedDateTimeUTC",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "57727a2a-3c17-4628-90af-e18d24cab73e",
+        "partitions": [
+          {
+            "name": "ContasReceber",
+            "mode": "directLake",
+            "source": {
+              "entityName": "ContasReceber",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[dbo].[ContasReceber]"
+      }
+    ]
+  }
+}

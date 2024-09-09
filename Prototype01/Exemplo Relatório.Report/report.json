@@ -1,0 +1,110 @@
+{
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2},\"customTheme\":{\"name\":\"ActiveGO17567050144453455.json\",\"version\":\"5.56\",\"type\":1}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU06",
+            "path": "BaseThemes/CY24SU06.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "ActiveGO17567050144453455.json",
+            "path": "ActiveGO17567050144453455.json",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Exemplo",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 1080.00,
+      "name": "137980224611b276a1e4",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0cf435de12f58e91f528\",\"layouts\":[{\"id\":0,\"position\":{\"x\":51.65461330588084,\"y\":201.34757431476,\"z\":3000,\"width\":268.46343241968003,\"height\":113.85098442928837,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Vendas.ValorCorretagem)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"Vendas\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"ValorCorretagem\"}},\"Function\":0},\"Name\":\"Sum(Vendas.ValorCorretagem)\",\"NativeReferenceName\":\"Corretagem\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"ValorCorretagem\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(Vendas.ValorCorretagem)\":{\"displayName\":\"Corretagem\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 113.85,
+          "width": 268.46,
+          "x": 51.65,
+          "y": 201.35,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"49acd596338885c63024\",\"layouts\":[{\"id\":0,\"position\":{\"x\":351.04053532363935,\"y\":201.34757431476,\"z\":4000,\"width\":268.46343241968003,\"height\":113.85098442928837,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Vendas.ValorProvisaoLongoPrazoCessao)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"Vendas\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"ValorProvisaoLongoPrazoCessao\"}},\"Function\":0},\"Name\":\"Sum(Vendas.ValorProvisaoLongoPrazoCessao)\",\"NativeReferenceName\":\"Provisao Longo Prazo\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"ValorProvisaoLongoPrazoCessao\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(Vendas.ValorProvisaoLongoPrazoCessao)\":{\"displayName\":\"Provisao Longo Prazo\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 113.85,
+          "width": 268.46,
+          "x": 351.04,
+          "y": 201.35,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"80a803c5e7d8358e4a66\",\"layouts\":[{\"id\":0,\"position\":{\"x\":957.3645605456184,\"y\":348.93218376013385,\"z\":5001,\"width\":440.6454767726161,\"height\":649.3722815596449}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"ContasReceber.Observacoes\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"ContasReceber\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Observacoes\"},\"Name\":\"ContasReceber.Observacoes\",\"NativeReferenceName\":\"Observacoes\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 649.37,
+          "width": 440.65,
+          "x": 957.36,
+          "y": 348.93,
+          "z": 5001.00
+        },
+        {
+          "config": "{\"name\":\"a230ae8422cb44da1e94\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1426.9998713164332,\"y\":348.93218376013385,\"z\":5002,\"width\":441.6996525543688,\"height\":649.3722815596449,\"tabOrder\":4001}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"ContasReceber.Obra\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(ContasReceber.NumParcelas)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"ContasReceber\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Obra\"},\"Name\":\"ContasReceber.Obra\",\"NativeReferenceName\":\"Obra\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"NumParcelas\"}},\"Function\":0},\"Name\":\"Sum(ContasReceber.NumParcelas)\",\"NativeReferenceName\":\"Sum of NumParcelas\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"NumParcelas\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"101.72859306058592D\"}}}},\"selector\":{\"metadata\":\"ContasReceber.Obra\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"306.69299168249086D\"}}}},\"selector\":{\"metadata\":\"Sum(ContasReceber.NumParcelas)\"}}],\"columnFormatting\":[{\"properties\":{\"dataBars\":{\"positiveColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#E4EDF6'\"}}}}},\"negativeColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFECED'\"}}}}},\"axisColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'foreground'\"}}}}},\"reverseDirection\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"hideText\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"totalMatchingOption\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}}}},\"selector\":{\"metadata\":\"Sum(ContasReceber.NumParcelas)\"}}]}}}",
+          "filters": "[]",
+          "height": 649.37,
+          "width": 441.70,
+          "x": 1427.00,
+          "y": 348.93,
+          "z": 5002.00
+        },
+        {
+          "config": "{\"name\":\"a8fa96235bd1b4711689\",\"layouts\":[{\"id\":0,\"position\":{\"x\":51.30047612919816,\"y\":348.93218376013385,\"z\":0,\"width\":877.0742504182216,\"height\":649.3722815596449,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Vendas.Usuario\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Vendas.ValorTotal)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"Vendas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Usuario\"},\"Name\":\"Vendas.Usuario\",\"NativeReferenceName\":\"Usuario\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"ValorTotal\"}},\"Function\":0},\"Name\":\"Sum(Vendas.ValorTotal)\",\"NativeReferenceName\":\"Sum of ValorTotal\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"ValorTotal\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 649.37,
+          "width": 877.07,
+          "x": 51.30,
+          "y": 348.93,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"e437e13338c740042b3e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":21.083515635053402,\"y\":21.083515635053402,\"z\":2000,\"width\":717.8937073735684,\"height\":81.17153519495561,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"EXEMPLO DE RELATÓRIO\",\"textStyle\":{\"fontFamily\":\"Calibri\",\"fontSize\":\"36pt\",\"color\":\"#ffffff\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 81.17,
+          "width": 717.89,
+          "x": 21.08,
+          "y": 21.08,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"ef2850e58e57469525c0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":650.4264573413975,\"y\":201.34757431476,\"z\":5000,\"width\":268.46343241968003,\"height\":113.85098442928837,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Vendas.Contrato)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"Vendas\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Contrato\"}},\"Function\":5},\"Name\":\"Sum(Vendas.Contrato)\",\"NativeReferenceName\":\"Contratos\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Contrato\"}},\"Function\":5}}}]},\"columnProperties\":{\"Sum(Vendas.ValorProvisaoLongoPrazoCessao)\":{\"displayName\":\"Provisao Longo Prazo\"},\"Sum(Vendas.Contrato)\":{\"displayName\":\"Contratos\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 113.85,
+          "width": 268.46,
+          "x": 650.43,
+          "y": 201.35,
+          "z": 5000.00
+        }
+      ],
+      "width": 1920.00
+    }
+  ],
+  "theme": "ActiveGO17567050144453455.json"
+}
